@@ -1,0 +1,14 @@
+dart:
+Dart is a client-optimized programming language developed by Google.
+variables in Dart:
+To declare a variable in Dart, you can use the "var" keyword or specify a data type explicitly, like "int", "double", "String", etc.
+oop:
+OOP is an Object Oriented Programming.
+abstraction:
+Abstraction is a concept in OOP that allows you to focus on essential features of an object or class while ignoring the non-essential ones.
+encapsulation:
+Encapsulation is a pillar of OOP.
+inheritance:
+Inheritance is also a pillar of OOP and it's like a concept of relation between classes,
+types of Loops:
+There are many types of loops in dart like,1)for loops 2)while 3)do while 4)for in 5)for as 6)foreach.
