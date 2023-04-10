@@ -6,11 +6,12 @@ void main() {
   print("******************Welcome to Dart Chatbot**********************");
   print("Please Enter keyword Which topic do you want to learn? or write 'bye' for exit.");
   while (true) {
-    stdout.write("You -->");
+    stdout.write("You -> ");
     String userInput = stdin.readLineSync() as String;
     userInput = userInput.toLowerCase();
     if (userInput == "bye") {
-      print("BOT: Ok Bye, Thank You!");
+      stdout.write("Bot -> ");
+      print("Ok Bye, Thank You!");
       break;
     } else {
       TextGenerator generator=new TextGenerator();
@@ -58,12 +59,14 @@ void generateText(var textTokenized, String userInput) {
   for (int count = 0; count < textTokenized.length; count++) {
     var spacetokenized = textTokenized[count].split(' ');
     if (spacetokenized.length > 1 && findingText(spacetokenized, userInput)) {
-      print("BOT: ${textTokenized[count]}");
+      stdout.write("Bot -> ");
+      print("${textTokenized[count]}");
       ++check;
     }
   }
   if (check == 0) {
-    print("BOT: Sorry! I didn't Understood You");
+    stdout.write("Bot -> ");
+    print("Sorry! I didn't Understood You");
   }
 }
 }
