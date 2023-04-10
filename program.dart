@@ -6,7 +6,7 @@ void main() {
   print("******************Welcome to Dart Chatbot**********************");
   print("Please Enter keyword Which topic do you want to learn? or write 'bye' for exit.");
   while (true) {
-    print("You: ");
+    stdout.write("You -->");
     String userInput = stdin.readLineSync() as String;
     userInput = userInput.toLowerCase();
     if (userInput == "bye") {
