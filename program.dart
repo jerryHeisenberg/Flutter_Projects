@@ -11,8 +11,8 @@ void textwriter(var textTokenized) {
   print("\t\t\tWelcome to Dart Chatbot");
   print(
       "_______________________________________________________________________________");
-  //print("Please Enter keyword Which topic do you want to learn? or write 'bye' for exit.");
-  print("Ask me ");
+  print("Ask me anything about Dart: ");
+  print("Please search through keywords for the topics do you want to learn or write 'bye' for exit.");
   while (true) {
     stdout.write("YOU-> ");
     //print("You: ");
