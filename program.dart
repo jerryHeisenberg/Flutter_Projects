@@ -12,7 +12,7 @@ void textwriter(var textTokenized) {
   print(
       "_______________________________________________________________________________");
   print("Ask me anything about Dart: ");
-  print("Please search through keywords for the topics do you want to learn or write 'bye' for exit.");
+  print("Please search through keywords for the topics which you want to learn or write 'bye' for exit.");
   while (true) {
     stdout.write("YOU-> ");
     //print("You: ");
