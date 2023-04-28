@@ -1,7 +1,7 @@
 import 'dart:io';
 
 void main() {
-  File file = new File("ques.txt");
+  File file = new File("main.txt");
   var textTokenized = file.readAsStringSync().split('.');
   textwriter(textTokenized);
 }
