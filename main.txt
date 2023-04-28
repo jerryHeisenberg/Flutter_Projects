@@ -120,7 +120,7 @@ int add(int a, [int b = 0]) {
 
 if (5 > 3) {
   print("5 is greater than 3");
-}.Constructors : Introduction to Constructors and Named and Sugar Syntactic Constructors
+}.Constructors Constructor : Introduction to Constructors and Named and Sugar Syntactic Constructors
 Constructors  are special methods that are used to create and initialize it'sobjects of a class, Constructors can be used to set the initial values of the properties of an object when it is created, In this section, we'll look at different types of constructors,
 There Are 4 Types of Constructors: 
 1)Default
