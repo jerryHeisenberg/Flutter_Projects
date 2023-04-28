@@ -20,7 +20,7 @@ void textwriter(var textTokenized) {
     userInput = userInput.toLowerCase();
     stdout.write("BOT-> ");
     if (userInput == "bye") {
-      print("Ok Bye, Thank You!");
+      print("Good Bye, Have a great day!");
       break;
     } else if (userInput != "") {
       TextGenerator generator = new TextGenerator();
