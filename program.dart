@@ -2,11 +2,11 @@ import 'dart:io';
 
 void main() {
   File file = new File("main.txt");
-  var textTokenized = file.readAsStringSync().split('.');
+  List<String> textTokenized = file.readAsStringSync().split('.');
   textwriter(textTokenized);
 }
 
-void textwriter(var textTokenized) {
+void textwriter(List<String> textTokenized) {
   print("");
   print("\t\t\tWelcome to Dart Chatbot");
   print(
@@ -32,7 +32,7 @@ void textwriter(var textTokenized) {
 }
 
 class TextFinder {
-  bool findingText(var spacetokenized, String text) {
+  bool findingText(List<String> spacetokenized, String text) {
     bool check = false;
     List<String> commonWords = [
       "and",
@@ -46,7 +46,7 @@ class TextFinder {
       "like",
       "a"
     ];
-    List tokenizedText = text.split(' ');
+    List<String> tokenizedText = text.split(' ');
     spacetokenized.forEach((element) {
       tokenizedText.forEach((element1) {
         bool commonwordschecker = false;
@@ -67,12 +67,12 @@ class TextFinder {
 }
 
 class TextGenerator extends TextFinder {
-  void generateText(var textTokenized, String userInput) {
+  void generateText(List<String> textTokenized, String userInput) {
     // print(textTokenized);
     int check = 0;
     for (int count = 0; count < textTokenized.length; count++) {
-      var spacetokenized = textTokenized[count].split(' : ');
-      var colonTokenized = spacetokenized[0].split(' ');
+      List<String> spacetokenized = textTokenized[count].split(' : ');
+      List<String> colonTokenized = spacetokenized[0].split(' ');
       // print(colonTokenized);
       if (spacetokenized.length > 1 && findingText(colonTokenized, userInput)) {
         //stdout.write("BOT-> ");
